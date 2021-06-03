@@ -1,0 +1,12 @@
+
+footer {
+    display: flex;
+    margin-top: auto;
+    width:100%;
+    font-style: italic;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f8f8f3;
+    flex-direction: column-reverse;
+  }
+

@@ -10,17 +10,17 @@ class Form extends React.Component {
                 <h1 class="mt-4 mt-md-2 text-center">Paciente con EP</h1>
                 <h3 class=" mt-4">Datos Personales</h3>
                 <hr />
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Nombre</label>
                     <input type="text" class="form-control" placeholder="Nombre" />
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class=" col-form-label">Apellido</label>
                     <input type="text" class="form-control" placeholder="Apellido" />
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class=" col-form-label">Sexo</label>
                     <select class="form-select">
                         <option value="1">Masculino</option>
@@ -29,12 +29,12 @@ class Form extends React.Component {
                     </select>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class=" col-form-label">Fecha de Nacimiento</label>
                     <input type="date" class="form-control" placeholder="Fecha de Nacimiento" />
                 </div>
 
-                <div class="mb-4 col-12 col-md-6 ">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3 ">
                     <label class=" col-form-label ">Telefono</label>
                     <input type="text" class="form-control" placeholder="Telefono" />
                 </div>
@@ -63,7 +63,7 @@ class Form extends React.Component {
                 </div>
                 <h3 class="mt-4">Vivienda</h3>
                 <hr />
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Provincia</label>
                     <div>
                         <select class="form-select">
@@ -74,7 +74,7 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Localidad</label>
                     <div>
                         <select class="form-select">
@@ -85,7 +85,7 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Municipio</label>
                     <div>
                         <select class="form-select">
@@ -96,21 +96,21 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Calle</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Calle" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Numero</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Numero" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Vivienda</label>
                     <div>
                         <select class="form-select">
@@ -123,7 +123,7 @@ class Form extends React.Component {
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Piso</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Piso" />
@@ -132,7 +132,7 @@ class Form extends React.Component {
 
                 <h3 class="mt-4">Datos Academicos</h3>
                 <hr />
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-lg-4 col-lg-4 col-xl-3">
                     <label class="col-form-label">Maxima Escolaridad</label>
                     <div>
                         <select class="form-select">
@@ -146,7 +146,7 @@ class Form extends React.Component {
 
                 <h3 class="mt-4">Ocupación</h3>
                 <hr />
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-lg-4 col-xl-3">
                     <label class="col-form-label">Ocupacion Previa</label>
                     <div>
                         <select class="form-select">
@@ -157,7 +157,7 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-lg-4 col-xl-3">
                     <label class="col-form-label">Ocupacion Actual</label>
                     <div>
                         <select class="form-select">
@@ -172,21 +172,21 @@ class Form extends React.Component {
                 <h1 class="mt-4 mt-md-2 text-center">Referente</h1>
                 <h3 class=" mt-4">Datos Personales</h3>
                 <hr />
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Nombre</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Nombre" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Apellido</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Apellido" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6 ">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3 ">
                     <label class="col-form-label">Sexo</label>
                     <div>
                         <select class="form-select">
@@ -197,20 +197,20 @@ class Form extends React.Component {
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Fecha de Nacimiento</label>
                     <div>
                         <input type="date" class="form-control" placeholder="Fecha de Nacimiento" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label ">Telefono</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Telefono" />
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Parentesco en referencia a la persona con EP</label>
                     <div>
                         <select class="form-select">
@@ -223,7 +223,7 @@ class Form extends React.Component {
                 </div>
                 <h3 class="mt-4">Vivienda</h3>
                 <hr />
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Provincia</label>
                     <div>
                         <select class="form-select">
@@ -234,7 +234,7 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Localidad</label>
                     <div>
                         <select class="form-select" >
@@ -245,7 +245,7 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Municipio</label>
                     <div>
                         <select class="form-select">
@@ -256,21 +256,21 @@ class Form extends React.Component {
                         </select>
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Calle</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Calle" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Numero</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Numero" />
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Vivienda</label>
                     <div>
                         <select class="form-select">
@@ -282,13 +282,14 @@ class Form extends React.Component {
                     </div>
                 </div>
 
-                <div class="mb-4 col-12 col-md-6">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                     <label class="col-form-label">Piso</label>
                     <div>
                         <input type="text" class="form-control" placeholder="Piso" />
                     </div>
                 </div>
-
+                <div class="w-100"></div>
+                <button type="button" class="mb-3 col-6 btn btn-success col-md-3 col-xl-2">Confirmar</button>
             </main>
         )
     }

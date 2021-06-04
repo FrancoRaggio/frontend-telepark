@@ -1,11 +1,36 @@
+import { Alert } from 'bootstrap';
 import React from 'react';
-
-import './styles/form.css';
+import Swal from 'sweetalert2';
 
 class Form extends React.Component {
+    constructor(props){
+        super (props);
+        this.checkEnabled=this.checkEnabled.bind(this);
+        this.checkDisabled=this.checkDisabled.bind(this);
+        this.state={checkstate:false};
+    }
+    checkEnabled(){
+        this.setState({checkstate:true});
+    }
+    checkDisabled(){
+        this.setState({checkstate:false});
+    }
+
+    send(){
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Formulario enviado con éxito!',
+            showConfirmButton: false,
+            timer: 1500,
+          })
+    }
+
     render() {
+        const checkstate=this.state.checkstate;
+
         return (
-            <main class=" m-0 row justify-content-center form-paciente w-100">
+                        <main class=" m-0 row justify-content-center form-paciente w-100">
                 <hr />
                 <h1 class="mt-4 mt-md-2 text-center">Paciente con EP</h1>
                 <h3 class=" mt-4">Datos Personales</h3>
@@ -289,9 +314,14 @@ class Form extends React.Component {
                     </div>
                 </div>
                 <div class="w-100"></div>
-                <button type="button" class="mb-3 col-6 btn btn-success col-md-3 col-xl-2">Confirmar</button>
+                <button type="button" class="mb-3 col-6 btn btn-success col-md-3 col-xl-2" onClick={this.send}>Confirmar</button>
             </main>
+
+            
         )
+        
     }
+        
 }
 export default Form;
+

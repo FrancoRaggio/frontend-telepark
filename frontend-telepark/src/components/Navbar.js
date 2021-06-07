@@ -12,7 +12,7 @@ class Navbar extends React.Component {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav text-center text-md-start ps-md-3">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Conoce al Paciente</a>
                             </li>
@@ -35,6 +35,7 @@ class Navbar extends React.Component {
                     </div>
                 </div>
             </nav>
+
         )
     }
 }

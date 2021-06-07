@@ -1,37 +1,37 @@
 import { Alert } from 'bootstrap';
 import React from 'react';
 import Swal from 'sweetalert2';
-
+import './styles/form.css';
 class Form extends React.Component {
-    constructor(props){
-        super (props);
-        this.checkEnabled=this.checkEnabled.bind(this);
-        this.checkDisabled=this.checkDisabled.bind(this);
-        this.state={checkstate:false};
+    constructor(props) {
+        super(props);
+        this.checkEnabled = this.checkEnabled.bind(this);
+        this.checkDisabled = this.checkDisabled.bind(this);
+        this.state = { checkstate: false };
     }
-    checkEnabled(){
-        this.setState({checkstate:true});
+    checkEnabled() {
+        this.setState({ checkstate: true });
     }
-    checkDisabled(){
-        this.setState({checkstate:false});
+    checkDisabled() {
+        this.setState({ checkstate: false });
     }
 
-    send(){
+    send() {
         Swal.fire({
             position: 'center',
             icon: 'success',
             title: 'Formulario enviado con éxito!',
             showConfirmButton: false,
             timer: 1500,
-          })
+        })
     }
 
     render() {
-        const checkstate=this.state.checkstate;
+        const checkstate = this.state.checkstate;
 
         return (
-                        <main class=" m-0 row justify-content-center form-paciente w-100">
-                <hr />
+            <main class="border-top-sm m-0 row justify-content-center form-paciente m-md-3 rounded shadow container-lg mx-md-auto">
+
                 <h1 class="mt-4 mt-md-2 text-center">Paciente con EP</h1>
                 <h3 class=" mt-4">Datos Personales</h3>
                 <hr />
@@ -235,7 +235,7 @@ class Form extends React.Component {
                         <input type="text" class="form-control" placeholder="Telefono" />
                     </div>
                 </div>
-                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-4">
                     <label class="col-form-label">Parentesco en referencia a la persona con EP</label>
                     <div>
                         <select class="form-select">
@@ -317,11 +317,11 @@ class Form extends React.Component {
                 <button type="button" class="mb-3 col-6 btn btn-success col-md-3 col-xl-2" onClick={this.send}>Confirmar</button>
             </main>
 
-            
+
         )
-        
+
     }
-        
+
 }
 export default Form;
 

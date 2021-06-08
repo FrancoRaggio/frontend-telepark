@@ -484,7 +484,7 @@ class Form extends React.Component {
                             <span style={{ color: "red" }}>{this.state.error["telefonoR"]}</span>
                         </div>
                     </div>
-                    <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="mb-4 col-12 col-md-6 col-lg-5 col-xl-4">
                         <label class="col-form-label">Parentesco en referencia a la persona con EP</label>
                         <div>
                             <select class="form-select" id="parentescoR" onChange={this.detectarCambio.bind(this, "parentescoR")} value={this.state.campo["parentescoR"] || ''}>

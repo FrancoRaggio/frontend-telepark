@@ -1,8 +1,13 @@
 import React from 'react';
 import Logo from './Logo';
+
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
 class Navbar extends React.Component {
     render() {
+        
         return (
+          
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -14,29 +19,31 @@ class Navbar extends React.Component {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav text-center text-md-start ps-md-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Conoce al Paciente</a>
+                                <Link class="nav-link" to="/">Conoce al paciente</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Informacion al Paciente</a>
+                                <Link class="nav-link" to="/">Información al paciente</Link>                                
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cartilla de Taller</a>
+                                <Link class="nav-link" to="/">Cartilla de taller</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" >Novedades</a>
+                                <Link class="nav-link" to="/">Novedades</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <Link class="nav-link" to="/">Contacto</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Iniciar Sesion</a>
+                                <Link class="nav-link" to="/FormLogin">Iniciar Sesión</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
+              
+            
         )
     }
 }
+
 export default Navbar;

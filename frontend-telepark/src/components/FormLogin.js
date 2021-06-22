@@ -101,20 +101,18 @@ class FormLogin extends React.Component {
             <form onSubmit={this.enviarFormulario.bind(this)}>
                 <main class="border-top-sm m-0 row justify-content-center form-paciente m-md-3 rounded shadow container-lg mx-md-auto">
 
-                    <h1 class="mt-4 mt-md-2 text-center">Login</h1>
+                    <h2 class="mt-4 mt-md-2 text-center">Login</h2>
                     <hr />
-                    <div class="mb-4 col-12 col-md-4 col-lg-4 col-xl-3"></div>
-                    <div class="mb-4 col-12 col-md-4 col-lg-4 col-xl-3">
+                    <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                         <label class="col-form-label">Usuario</label>
-                        <input type="email" class="form-control" placeholder="Digita Tu Correo Electronico" id="email" aria-describedby="email" onChange={this.detectarCambio.bind(this, "email")} value={this.state.campo["email"] || ''}/>
+                        <input type="email" class="form-control" placeholder="Ingrese su Correo Electronico" id="email" aria-describedby="email" onChange={this.detectarCambio.bind(this, "email")} value={this.state.campo["email"] || ''}/>
                     </div>
-                    <div class="mb-4 col-12 col-md-4 col-lg-4 col-xl-3"></div>
-                    <div class="mb-4 col-12 col-md-4 col-lg-4 col-xl-3"></div>
-                    <div class="mb-4 col-12 col-md-4 col-lg-4 col-xl-3">
+                    <div class="w-100"></div>  
+                    <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
                         <label class="col-form-label">Contraseña</label>
-                        <input type="password" class="form-control"  placeholder="Digita Tu Contraseña" id="pass" aria-describedby="pass" onChange={this.detectarCambio.bind(this, "pass")} value={this.state.campo["pass"] || ''}/>
+                        <input type="password" class="form-control"  placeholder="Ingrese su Contraseña" id="pass" aria-describedby="pass" onChange={this.detectarCambio.bind(this, "pass")} value={this.state.campo["pass"] || ''}/>
                     </div>
-                    <div class="mb-4 col-12 col-md-4 col-lg-4 col-xl-3"></div>
+                    <div class="w-100"></div>               
                         <button type="submit" class="mb-3 col-6 btn btn-primary col-md-3 col-xl-2" to >Iniciar Sesión</button>
                 </main>
             </form>

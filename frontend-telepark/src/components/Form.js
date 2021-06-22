@@ -259,7 +259,7 @@ class Form extends React.Component {
             <form onSubmit={this.enviarFormulario.bind(this)}>
                 <main class="border-top-sm m-0 row justify-content-center form-paciente m-md-3 rounded shadow container-lg mx-md-auto">
 
-                    <h1 class="mt-4 mt-md-2 text-center">Paciente con EP</h1>
+                    <h1 class="mt-4 mt-md-2 text-center">Persona con EP</h1>
                     <h3 class=" mt-4">Datos Personales</h3>
                     <hr />
                     <div class="mb-4 col-12 col-md-6 col-lg-4 col-xl-3">

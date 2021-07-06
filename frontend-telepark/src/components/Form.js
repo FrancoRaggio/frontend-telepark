@@ -21,6 +21,7 @@ class Form extends React.Component {
         let error = {};
         let formularioValido = true;
 
+        //Datos de Paciente con Parkinson
         // Nombre de EP 
         if (!campo["nombreEP"]) {
             formularioValido = false;
@@ -69,36 +70,6 @@ class Form extends React.Component {
             error["municipioEP"] = "Por favor, selecciona el municipio del paciente.";
         }
 
-        // Calle de EP 
-        if (!campo["calleEP"]) {
-            formularioValido = false;
-            error["calleEP"] = "Por favor, ingresa la calle del paciente.";
-        }
-
-        // Numero de EP 
-        if (!campo["numeroEP"]) {
-            formularioValido = false;
-            error["numeroEP"] = "Por favor, ingresa el numero de casa del paciente.";
-        }
-
-        // Vivienda de EP 
-        if (!campo["viviendaEP"]) {
-            formularioValido = false;
-            error["viviendaEP"] = "Por favor, selecciona tipo de vivienda del paciente.";
-        }
-
-        // Piso de EP 
-        if (!campo["pisoEP"]) {
-            formularioValido = false;
-            error["pisoEP"] = "Por favor, ingresa el piso del paciente.";
-        }
-
-        // Maxima escolaridad de EP 
-        if (!campo["escolaridadEP"]) {
-            formularioValido = false;
-            error["escolaridadEP"] = "Por favor, selecciona el nivel de escolaridad alcanzado por el paciente.";
-        }
-
         // Ocupacion previa de EP 
         if (!campo["ocupacionPEP"]) {
             formularioValido = false;
@@ -110,7 +81,8 @@ class Form extends React.Component {
             formularioValido = false;
             error["ocupacionAEP"] = "Por favor, selecciona la ocupacion actual del paciente.";
         }
-
+        
+        //Datos Referente
         // Nombre de R 
         if (!campo["nombreR"]) {
             formularioValido = false;
@@ -140,56 +112,7 @@ class Form extends React.Component {
             formularioValido = false;
             error["telefonoR"] = "Por favor, ingresa el telefono del referente.";
         }
-
-        // Parentesco de R con EP
-        if (!campo["parentescoR"]) {
-            formularioValido = false;
-            error["parentescoR"] = "Por favor, selecciona el parentesco.";
-        }
-
-        // Provincia de R 
-        if (!campo["provinciaR"]) {
-            formularioValido = false;
-            error["provinciaR"] = "Por favor, selecciona la provincia del referente.";
-        }
-
-        // Localidad de R 
-        if (!campo["localidadR"]) {
-            formularioValido = false;
-            error["localidadR"] = "Por favor, selecciona la localidad del referente.";
-        }
-
-        // Municipio de R
-        if (!campo["municipioR"]) {
-            formularioValido = false;
-            error["municipioR"] = "Por favor, selecciona el municipio del referente.";
-        }
-
-        // Calle de R
-        if (!campo["calleR"]) {
-            formularioValido = false;
-            error["calleR"] = "Por favor, ingresa la calle del referente.";
-        }
-
-        // Numero de R
-        if (!campo["numeroR"]) {
-            formularioValido = false;
-            error["numeroR"] = "Por favor, ingresa el numero de casa del referente.";
-        }
-
-        // Vivienda de R
-        if (!campo["viviendaR"]) {
-            formularioValido = false;
-            error["viviendaR"] = "Por favor, selecciona tipo de vivienda del referente.";
-        }
-
-        // Piso de EP 
-        if (!campo["pisoR"]) {
-            formularioValido = false;
-            error["pisoR"] = "Por favor, ingresa el piso del referente.";
-        }
-
-
+        
 
         // Seteo el estado de error 
         this.setState({

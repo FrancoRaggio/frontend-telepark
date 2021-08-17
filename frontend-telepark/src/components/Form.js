@@ -1,6 +1,7 @@
 import { Alert } from 'bootstrap';
 import React from 'react';
 import Swal from 'sweetalert2';
+import './styles/form.css'
 
 class Form extends React.Component {
 

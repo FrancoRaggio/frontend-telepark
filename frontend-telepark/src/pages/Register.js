@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Form from '../components/Form';
 import FormLogin from '../components/FormLogin'
+import ListaDiagnostico from '../components/lista_diagnostico';
 
 class Register extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class Register extends React.Component {
                 <Navbar />
                 <Route exact path="/" component={Form}/>
                 <Route exact path="/FormLogin" component={FormLogin}/>
+                <Route exact path="/ListaDiagnostico" component={ListaDiagnostico}/>
                 <Footer />
             </div>
             </Router>
